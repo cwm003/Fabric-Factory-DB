@@ -11,7 +11,7 @@ class OrderClothTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('ordercloth')->insert([
+        DB::table('ordercloths')->insert([
             'namefactory' => 'โรงงานผ้าจีน',
             'factory_id' => '1122',
             'tel_factory' => '0256895789',
@@ -29,7 +29,7 @@ class OrderClothTableSeeder extends Seeder
             'unit_folding' => 400,
             'order_clothid' => '00001',
         ]);
-        DB::table('ordercloth')->insert([
+        DB::table('ordercloths')->insert([
             'namefactory' => 'โรงงานผ้าจีน',
             'factory_id' => '1122',
             'tel_factory' => '0256895789',

@@ -11,7 +11,7 @@ class MachineTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('machine')->insert([
+        DB::table('machines')->insert([
             'departmentID' => '005',
             'machineName' => 'จักรเย็บ',
             'machineID' => 'MC005',
@@ -20,7 +20,7 @@ class MachineTableSeeder extends Seeder
             
         ]);
 
-        DB::table('machine')->insert([
+        DB::table('machines')->insert([
             'departmentID' => '007',
             'machineName' => 'เครื่องปัก' ,
             'machineID' => 'MC007',

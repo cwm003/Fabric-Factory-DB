@@ -11,7 +11,7 @@ class OrderSewTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('ordersew')->insert([   
+        DB::table('ordersews')->insert([   
             'OrderID' => '00001',           
             'OrderSewID' => '00010',
             'patternID'=> '001',
@@ -21,7 +21,7 @@ class OrderSewTableSeeder extends Seeder
             'EndDate' => '2017-01-25',             
             'Total' => 200          
         ]);
-        DB::table('ordersew')->insert([
+        DB::table('ordersews')->insert([
             'OrderID' => '00002',           
             'OrderSewID' => '00011',
             'patternID'=> '001',
@@ -31,7 +31,7 @@ class OrderSewTableSeeder extends Seeder
             'EndDate' => '2017-01-25',             
             'Total' => 200
         ]);
-        DB::table('ordersew')->insert([
+        DB::table('ordersews')->insert([
             'OrderID' => '00003',           
             'OrderSewID' => '00012',
             'patternID'=> '001',

@@ -11,7 +11,7 @@ class PackingTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('packing')->insert([
+        DB::table('packings')->insert([
             'OrderID' => 'P11',
             'linetotal' => 1000,
             'No_pack' => 1234

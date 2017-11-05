@@ -11,7 +11,7 @@ class ShirtTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('shirt')->insert([
+        DB::table('shirts')->insert([
             'patternID' => 'P11',
             'styleShirt' => '00001',
             'size' => 'S,M,L,XL'

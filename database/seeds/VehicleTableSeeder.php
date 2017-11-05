@@ -11,7 +11,7 @@ class VehicleTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('vehicle')->insert([
+        DB::table('vehicles')->insert([
             'PurchaseDate' => '2008-08-08',
             'color' => 'red',
             'generation' => 'D-max',
@@ -20,7 +20,7 @@ class VehicleTableSeeder extends Seeder
             'VehicleID' => '010',  
             'employeeID' => '1234567896'
         ]);
-        DB::table('vehicle')->insert([
+        DB::table('vehicles')->insert([
             'PurchaseDate' => '2010-05-30',
             'color' => 'red',
             'generation' => 'Mercedes',

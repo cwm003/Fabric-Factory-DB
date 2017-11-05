@@ -11,14 +11,14 @@ class MachineRepairTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('machinerepair')->insert([
+        DB::table('machinerepairs')->insert([
             'machineID' => 'MC001',
             'machineName' => 'จักรเย็บ' ,
             'DateRepair' => '2017-08-14',
             'ExpenseRepair' => 15000, 
         ]);
 
-        DB::table('machinerepair')->insert([
+        DB::table('machinerepairs')->insert([
             'machineID' => 'MC002',
             'machineName' => 'เครื่องปัก' ,
             'DateRepair' => '2017-08-14',

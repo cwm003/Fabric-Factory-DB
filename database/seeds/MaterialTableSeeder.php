@@ -11,14 +11,14 @@ class MaterialTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('material')->insert([
+        DB::table('materials')->insert([
             'name_material' => 'ตะขอ',
             'materialID' => 'MT001' ,
             'number_material' => 5,
             'detail' => 'ถุงละ1000ชิ้น'
         ]);
 
-        DB::table('material')->insert([
+        DB::table('materials')->insert([
             'name_material' => 'กระดุมสีขาวธรรมดา' ,
             'materialID' => 'MT002' ,
             'number_material' => 2,

@@ -11,7 +11,7 @@ class OrderCutTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('ordercut')->insert([
+        DB::table('ordercuts')->insert([
             'orderID' => '00001',
             'patternID'=> '001',
             'typeCloth' => 'TC',
@@ -24,7 +24,7 @@ class OrderCutTableSeeder extends Seeder
             'current_complete' => 50,
             'detailscreen' => 'nice and fix'
         ]);
-        DB::table('ordercut')->insert([
+        DB::table('ordercuts')->insert([
             'orderID' => '00002',
             'patternID'=> '001',
             'typeCloth' => 'TC',
@@ -37,7 +37,7 @@ class OrderCutTableSeeder extends Seeder
             'current_complete' => 50,
             'detailscreen' => 'nice and fix'
         ]);
-        DB::table('ordercut')->insert([
+        DB::table('ordercuts')->insert([
             'orderID' => '00003',
             'patternID'=> '001',
             'typeCloth' => 'TC',

@@ -11,7 +11,7 @@ class EmployeeTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('employee')->insert([
+        DB::table('employees')->insert([
             'employeeID' => '1234567891',
             'Fname' => 'งามสิริ',
             'Lname' => 'บัวมั่น',
@@ -24,7 +24,7 @@ class EmployeeTableSeeder extends Seeder
             'salary' => 100000,
             'position' => 'Supervisor'
         ]);
-        DB::table('employee')->insert([
+        DB::table('employees')->insert([
             'employeeID' => '1234567892',
             'Fname' => 'สมหมาย',
             'Lname' => 'ยศ',
@@ -37,7 +37,7 @@ class EmployeeTableSeeder extends Seeder
             'salary' => 50000,
             'position' => 'Supervisor'
         ]);
-        DB::table('employee')->insert([
+        DB::table('employees')->insert([
             'employeeID' => '1234567893',
             'Fname' => 'หยก',
             'Lname' => 'หยวก',
@@ -50,7 +50,7 @@ class EmployeeTableSeeder extends Seeder
             'salary' => 10000,
             'position' => 'Supervisor'
         ]);
-        DB::table('employee')->insert([
+        DB::table('employees')->insert([
             'employeeID' => '1234567894',
             'Fname' => 'แชมป์',
             'Lname' => 'เพลิน',
@@ -63,7 +63,7 @@ class EmployeeTableSeeder extends Seeder
             'salary' => 900000000,
             'position' => 'Supervisor'
         ]);
-        DB::table('employee')->insert([
+        DB::table('employees')->insert([
             'employeeID' => '1234567895',
             'Fname' => 'เมย์',
             'Lname' => 'นินิ',
@@ -76,7 +76,7 @@ class EmployeeTableSeeder extends Seeder
             'salary' => 50000,
             'position' => 'Supervisor'
         ]);
-        DB::table('employee')->insert([
+        DB::table('employees')->insert([
             'employeeID' => '1234567896',
             'Fname' => 'สมาย',
             'Lname' => 'ขนมจีบ',
@@ -89,7 +89,7 @@ class EmployeeTableSeeder extends Seeder
             'salary' => 10,
             'position' => 'Supervisor'
         ]);
-        DB::table('employee')->insert([
+        DB::table('employees')->insert([
             'employeeID' => '1234567897',
             'Fname' => 'อิก',
             'Lname' => 'ศอกชมพู',
@@ -102,7 +102,7 @@ class EmployeeTableSeeder extends Seeder
             'salary' => 100,
             'position' => 'Employee'
         ]);
-        DB::table('employee')->insert([
+        DB::table('employees')->insert([
             'employeeID' => '1234567898',
             'Fname' => 'โอปอ',
             'Lname' => 'ฝายหิน',
@@ -115,7 +115,7 @@ class EmployeeTableSeeder extends Seeder
             'salary' => 1000,
             'position' => 'Employee'
         ]);
-        DB::table('employee')->insert([
+        DB::table('employees')->insert([
             'employeeID' => '1234567899',
             'Fname' => 'บูม',
             'Lname' => 'ฝาแฝด',
@@ -128,7 +128,7 @@ class EmployeeTableSeeder extends Seeder
             'salary' => 1000,
             'position' => 'Employee'
         ]);
-        DB::table('employee')->insert([
+        DB::table('employees')->insert([
             'employeeID' => '1234567890',
             'Fname' => 'ขนุน',
             'Lname' => 'เล่นไวโอลิน',

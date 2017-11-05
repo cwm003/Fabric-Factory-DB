@@ -11,7 +11,7 @@ class HistoryShipTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('historyshipment')->insert([
+        DB::table('historyshipments')->insert([
             'date' => '2015-02-03',
             'employeeID' => '1234567897',
             'OrderID' => '00001',
