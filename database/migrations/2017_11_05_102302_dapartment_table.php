@@ -13,7 +13,7 @@ class DapartmentTable extends Migration
      */
     public function up()
     {
-        Schema::create('department', function (Blueprint $table) {
+        Schema::create('departments', function (Blueprint $table) {
             $table->string('departmentname',50);
             $table->string('departmentID',3);
             $table->string('supervisor',10);
@@ -30,6 +30,6 @@ class DapartmentTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('department');
+        Schema::dropIfExists('departments');
     }
 }

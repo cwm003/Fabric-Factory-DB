@@ -44,6 +44,6 @@ class OrdercustomerTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('ordercustomer');
+        Schema::dropIfExists('ordercustomers');
     }
 }

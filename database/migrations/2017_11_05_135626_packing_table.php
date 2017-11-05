@@ -8,7 +8,7 @@ class PackingTable extends Migration
 {
     public function up()
     {
-        Schema::create('packing', function (Blueprint $table) {
+        Schema::create('packings', function (Blueprint $table) {
             $table->string('OrderID',3);
             $table->integer('linetotal');
             $table->integer('No_pack');
@@ -25,6 +25,6 @@ class PackingTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('packing');
+        Schema::dropIfExists('packings');
     }
 }

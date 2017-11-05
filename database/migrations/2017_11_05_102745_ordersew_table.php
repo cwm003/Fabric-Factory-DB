@@ -13,7 +13,7 @@ class OrdersewTable extends Migration
      */
     public function up()
     {
-        Schema::create('ordersew', function (Blueprint $table) {
+        Schema::create('ordersews', function (Blueprint $table) {
             $table->string('OrderID',5);
             $table->string('OrderSewID',5);
             $table->string('PatternID',3);
@@ -36,6 +36,6 @@ class OrdersewTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('ordersew');
+        Schema::dropIfExists('ordersews');
     }
 }

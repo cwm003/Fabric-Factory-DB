@@ -13,7 +13,7 @@ class HistoryshipTable extends Migration
      */
     public function up()
     {
-        Schema::create('historyshipment', function (Blueprint $table) {
+        Schema::create('historyshipments', function (Blueprint $table) {
             $table->date('date');
             $table->string('employeeID',10);
             $table->string('OrderID',5);
@@ -35,6 +35,6 @@ class HistoryshipTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('historyshipment');
+        Schema::dropIfExists('historyshipments');
     }
 }

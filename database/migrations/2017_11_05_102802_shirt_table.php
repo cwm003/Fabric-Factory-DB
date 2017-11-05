@@ -13,7 +13,7 @@ class ShirtTable extends Migration
      */
     public function up()
     {
-        Schema::create('shirt', function (Blueprint $table) {
+        Schema::create('shirts', function (Blueprint $table) {
             $table->string('patternID',3);
             $table->string('styleShirt',100);
             $table->string('size',10);
@@ -29,6 +29,6 @@ class ShirtTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('shirt');
+        Schema::dropIfExists('shirts');
     }
 }

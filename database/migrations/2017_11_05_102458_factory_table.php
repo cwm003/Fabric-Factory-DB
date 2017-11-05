@@ -13,7 +13,7 @@ class FactoryTable extends Migration
      */
     public function up()
     {
-        Schema::create('factory', function (Blueprint $table) {
+        Schema::create('factorys', function (Blueprint $table) {
             $table->string('name_factory',100);
             $table->string('factory_id',4);
             $table->string('tel',10);
@@ -31,6 +31,6 @@ class FactoryTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('factory');
+        Schema::dropIfExists('factorys');
     }
 }

@@ -13,7 +13,7 @@ class OrderclothTable extends Migration
      */
     public function up()
     {
-        Schema::create('ordercloth', function (Blueprint $table) {
+        Schema::create('ordercloths', function (Blueprint $table) {
             $table->string('namefactory',100);
             $table->string('factory_id',4);
             $table->string('tel_factory',10);
@@ -47,6 +47,6 @@ class OrderclothTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('order_cloth');
+        Schema::dropIfExists('order_cloths');
     }
 }

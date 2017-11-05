@@ -8,7 +8,7 @@ class EquipmentTable extends Migration
 {
     public function up()
     {
-        Schema::create('equipment', function (Blueprint $table) {
+        Schema::create('equipments', function (Blueprint $table) {
         $table->string('equipmentID',5);
         $table->string('equipmentName',50);
         $table->string('detail',255);
@@ -26,6 +26,6 @@ class EquipmentTable extends Migration
  */
 public function down()
 {
-    Schema::dropIfExists('equipment');
+    Schema::dropIfExists('equipments');
 }
 }

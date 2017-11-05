@@ -13,7 +13,7 @@ class OrdermaterialTable extends Migration
      */
     public function up()
     {
-        Schema::create('ordermaterial', function (Blueprint $table) {       
+        Schema::create('ordermaterials', function (Blueprint $table) {       
             $table->string('detail',255);
             $table->string('NameMaterial',100);
             $table->string('materialID',5);
@@ -32,6 +32,6 @@ class OrdermaterialTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('ordermaterial');
+        Schema::dropIfExists('ordermaterials');
     }
 }

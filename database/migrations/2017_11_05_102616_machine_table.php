@@ -13,7 +13,7 @@ class MachineTable extends Migration
      */
     public function up()
     {
-        Schema::create('machine', function (Blueprint $table) {       
+        Schema::create('machines', function (Blueprint $table) {       
             $table->string('departmentID',3);
             $table->string('machineName',50);
             $table->string('machineID',5);
@@ -34,6 +34,6 @@ class MachineTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('machine');
+        Schema::dropIfExists('machines');
     }
 }

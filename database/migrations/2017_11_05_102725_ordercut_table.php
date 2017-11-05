@@ -13,7 +13,7 @@ class OrdercutTable extends Migration
      */
     public function up()
     {
-        Schema::create('ordercut', function (Blueprint $table) {        
+        Schema::create('ordercuts', function (Blueprint $table) {        
             $table->string('orderID',5);
             $table->string('patternID',3);
             $table->string('typeCloth',2);
@@ -38,6 +38,6 @@ class OrdercutTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('ordercut');
+        Schema::dropIfExists('ordercuts');
     }
 }

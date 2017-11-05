@@ -13,7 +13,7 @@ class VehicleTable extends Migration
      */
     public function up()
     {
-        Schema::create('vehicle', function (Blueprint $table) {
+        Schema::create('vehicles', function (Blueprint $table) {
             $table->date('PurchaseDate');
             $table->string('color',20);
             $table->string('generation',20);
@@ -34,6 +34,6 @@ class VehicleTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('vehicle');
+        Schema::dropIfExists('vehicles');
     }
 }

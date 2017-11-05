@@ -12,7 +12,7 @@ class HistoryTable extends Migration
     */
    public function up()
    {
-       Schema::create('historyequipmentmaterialmachine', function (Blueprint $table) {
+       Schema::create('historyequipmentmaterialmachines', function (Blueprint $table) {
            $table->string('order_EQMTMC_ID',5);
            $table->string('EQMTMC_ID',4);
            $table->date('date');
@@ -30,6 +30,6 @@ class HistoryTable extends Migration
     */
    public function down()
    {
-       Schema::dropIfExists('historyequipmentmaterialmachine');
+       Schema::dropIfExists('historyequipmentmaterialmachines');
    }
 }

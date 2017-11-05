@@ -13,7 +13,7 @@ class EmployeeTable extends Migration
      */
     public function up()
     {
-        Schema::create('employee', function (Blueprint $table) {
+        Schema::create('employees', function (Blueprint $table) {
             $table->string('employeeID', 10);
             $table->string('Fname',20);
             $table->string('Lname',20);
@@ -38,6 +38,6 @@ class EmployeeTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('employee');
+        Schema::dropIfExists('employees');
     }
 }

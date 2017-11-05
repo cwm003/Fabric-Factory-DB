@@ -13,7 +13,7 @@ class MachineRepairTable extends Migration
      */
     public function up()
     {
-        Schema::create('machinerepair', function (Blueprint $table) {
+        Schema::create('machinerepairs', function (Blueprint $table) {
             $table->string('machineID',5);
             $table->string('machineName',50);
             $table->Date('DateRepair');
@@ -31,6 +31,6 @@ class MachineRepairTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('machinerepair');
+        Schema::dropIfExists('machinerepairs');
     }
 }
