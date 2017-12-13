@@ -7,36 +7,33 @@ use Illuminate\Database\Migrations\Migration;
 class OrderclothTable extends Migration
 {
     /**
-     * Run the migrations.
+     * Run the migrations. ลบ namefac,tel,addr,account,cloth-id 
      *
      * @return void
      */
     public function up()
     {
         Schema::create('ordercloths', function (Blueprint $table) {
-            $table->string('namefactory',100);
+            $table->string('order_clothid',5); //ย้าย
+            $table->string('OrderID',5);//ย้าย
             $table->string('factory_id',4);
-            $table->string('tel_factory',10);
-            $table->string('address_factory',255);
             $table->date('startorder');
-            $table->float('weight_cloth',5,3);
-            $table->string('account_factory',10);
-            $table->date('date_tranfer');
-            $table->integer('linetotal');
             $table->string('type_cloth',5);
+            $table->string('color_cloth',3); //add
+            $table->integer('width_cloth');//ย้าย
+            $table->float('weight_cloth',5,3);
+            $table->integer('folding');//ย้าย
+            $table->integer('unit_folding');//ย้าย
+
+            $table->integer('Total');
+
+            $table->integer('linetotal');//ย้าย
+            $table->date('date_tranfer');
             $table->date('date_recv');
-            $table->string('cloth_id',4);
-            $table->integer('width_cloth');
-            $table->integer('folding');
-            $table->integer('unit_folding');
-            $table->string('order_clothid',5);
+            $table->integer('status');
            
-            $table->primary(['order_clothid']);
-            //$table->foreign('factory_id')->references('factory_id')->on('factory');
-            //$table->foreign('tel_factory')->references('tel')->on('factory');
-            //$table->foreign('address_factory')->references('address')->on('factory');
-            //$table->foreign('idfactory')->references('factory_id')->on('factory');
-            //$table->foreign('account_factory')->references('account')->on('factory');
+            $table->primary('order_clothid');
+            $table->timestamps();
         });
     }
 
@@ -47,6 +44,6 @@ class OrderclothTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('order_cloths');
+        Schema::dropIfExists('ordercloths');
     }
 }

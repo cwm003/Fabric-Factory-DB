@@ -14,20 +14,13 @@ class DatabaseSeeder extends Seeder
         $this->call('CustomerTableSeeder');
         $this->call('DepartmentTableSeeder');
         $this->call('EmployeeTableSeeder');
-        $this->call('EquipmentTableSeeder');
         $this->call('FactoryTableSeeder');
-        $this->call('HistoryShipTableSeeder');
-        $this->call('HistoryTableSeeder');
-        $this->call('MachineRepairTableSeeder');
-        $this->call('MachineTableSeeder');
-        $this->call('MaterialTableSeeder');
         $this->call('OrderClothTableSeeder');
         $this->call('OrderCutomerTableSeeder');
         $this->call('OrderCutTableSeeder');
-        $this->call('OrderMaterialTableSeeder');
-        $this->call('OrderSewTableSeeder');
-        $this->call('PackingTableSeeder');
-        $this->call('ShirtTableSeeder');  
-        $this->call('VehicleTableSeeder'); 
+        $this->call('OrderSewTableSeeder'); 
+        $this->call('OrderofcustomerTableSeeder'); 
+        $this->call('RelationemporderTableSeeder'); 
+        $this->call('OrderclothofFactorSeeder'); 
     }
 }

@@ -21,13 +21,14 @@ class EmployeeTable extends Migration
             $table->string('departmentID',3);
             $table->integer('age');
             $table->date('hire_date');
+            $table->string('tel',10);
             $table->string('address',255);
             $table->string('gender',10);
             $table->integer('salary');
             $table->string('position',50);
-
+            $table->string('password',50)->nullable();
             $table->primary(['employeeID','Ssn']);
-            //$table->foreign('departmentID')->references('deapartmentID')->on('department');
+            $table->timestamps();
         });
     }
 

@@ -7,27 +7,27 @@ use Illuminate\Database\Migrations\Migration;
 class OrdercutTable extends Migration
 {
      /**
-     * Run the migrations.
+     * Run the migrations. ลบ total
      *
      * @return void
      */
     public function up()
-    {
-        Schema::create('ordercuts', function (Blueprint $table) {        
+    { 
+        Schema::create('ordercuts', function (Blueprint $table) {
+            $table->string('OrderCutID',5);   //ย้าย       
             $table->string('orderID',5);
-            $table->string('patternID',3);
-            $table->string('typeCloth',2);
-            $table->integer('OrderCutID');          
-            $table->integer('numBack');
-            $table->integer('numFront');
-            $table->integer('numSleeve');
+            //$table->string('factory_id',4); //ย้าย
+            $table->string('typeCloth',2);        
             $table->string('ColorID');
-            $table->integer('total');
-            $table->integer('current_complete');
-            $table->string('detailscreen',255);
-           
-            $table->primary(['OrderCutID']);
-            //$table->foreign('OrderID')->references('OrderID')->on('ordercustomer');    
+            $table->string('Total');
+            $table->string('EmployeeCutID',10);
+            $table->date('StartDate');
+            $table->date('EndDate');
+            $table->integer('status');
+            
+            $table->primary('OrderCutID');
+            
+            $table->timestamps();
         });
     }
 

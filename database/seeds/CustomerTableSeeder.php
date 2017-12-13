@@ -13,39 +13,65 @@ class CustomerTableSeeder extends Seeder
     {
         DB::table('customers')->insert([
             'nameCus' => 'fammie',
-            'customerID' => '624',
+            'customerID' => '001',
             'Address' => '259 m.2 Suthep ChiangMai 50200',
             'tel' => '0543368955'
         ]);
         DB::table('customers')->insert([
             'nameCus' => 'samhee',
-            'customerID' => '789',
+            'customerID' => '002',
             'Address' => '259 m.2 Suthep ChiangMai 50200',
             'tel' => '0543368955'
         ]);
         DB::table('customers')->insert([
             'nameCus' => 'chanom',
-            'customerID' => '101',
+            'customerID' => '003',
             'Address' => '259 m.2 Suthep ChiangMai 50200',
             'tel' => '0543368955'
         ]);
         DB::table('customers')->insert([
             'nameCus' => 'kaimok',
-            'customerID' => '555',
+            'customerID' => '004',
             'Address' => '259 m.2 Suthep ChiangMai 50200',
             'tel' => '0543368955'
         ]);
         DB::table('customers')->insert([
             'nameCus' => 'nongyai',
-            'customerID' => '666',
+            'customerID' => '005',
             'Address' => '259 m.2 Suthep ChiangMai 50200',
             'tel' => '0543368955'
         ]);
         DB::table('customers')->insert([
             'nameCus' => 'nongkai',
-            'customerID' => '777',
+            'customerID' => '006',
             'Address' => '259 m.2 Suthep ChiangMai 50200',
             'tel' => '0543368955'
         ]);
+        DB::table('customers')->insert([
+            'nameCus' => 'yuta',
+            'customerID' => '007',
+            'Address' => '259 m.2 Suthep ChiangMai 50200',
+            'tel' => '0543368955'
+        ]);
+        DB::table('customers')->insert([
+            'nameCus' => 'jedsada',
+            'customerID' => '008',
+            'Address' => '259 m.2 Suthep ChiangMai 50200',
+            'tel' => '0543368955'
+        ]);
+        DB::table('customers')->insert([
+            'nameCus' => 'donlapat',
+            'customerID' => '009',
+            'Address' => '259 m.2 Suthep ChiangMai 50200',
+            'tel' => '0543368955'
+        ]);
+        DB::table('customers')->insert([
+            'nameCus' => 'mark',
+            'customerID' => '010',
+            'Address' => '259 m.2 Suthep ChiangMai 50200',
+            'tel' => '0543368955'
+        ]);
+
+        
     }
 }

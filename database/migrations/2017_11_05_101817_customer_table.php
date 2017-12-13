@@ -18,8 +18,9 @@ class CustomerTable extends Migration
             $table->string('customerID',3);
             $table->string('Address',255)->nullable();
 			$table->string('tel',10)->nullable();
+            
             $table->primary('customerID');
-
+            $table->timestamps();
             
         });
     }

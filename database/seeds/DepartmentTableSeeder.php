@@ -12,34 +12,29 @@ class DepartmentTableSeeder extends Seeder
     public function run()
     {
         DB::table('departments')->insert([
+            'departmentname' => 'CEO',
+            'departmentID' => '999',
+            'supervisor' => '9999999999'
+        ]);
+        DB::table('departments')->insert([
+            'departmentname' => 'แผนกสั่งผ้า',
+            'departmentID' => '001',
+            'supervisor' => '0014567896'
+        ]);  
+        DB::table('departments')->insert([
             'departmentname' => 'แผนกเย็บ',
-            'departmentID' => '005',
-            'supervisor' => '1234567891'
+            'departmentID' => '300',
+            'supervisor' => '3004567891'
         ]); 
         DB::table('departments')->insert([
             'departmentname' => 'แผนกตัด',
-            'departmentID' => '006',
-            'supervisor' => '1234567892'
+            'departmentID' => '200',
+            'supervisor' => '2004567892'
         ]); 
         DB::table('departments')->insert([
-            'departmentname' => 'แผนกปัก/สกรีน',
-            'departmentID' => '007',
-            'supervisor' => '1234567893'
-        ]); 
-        DB::table('departments')->insert([
-            'departmentname' => 'แผนกแพค',
-            'departmentID' => '008',
-            'supervisor' => '1234567894'
-        ]);
-        DB::table('departments')->insert([
-            'departmentname' => 'แผนกซ่อมบำรุง',
-            'departmentID' => '009',
-            'supervisor' => '1234567895'
-        ]);
-        DB::table('departments')->insert([
-            'departmentname' => 'แผนกขนส่ง',
-            'departmentID' => '010',
-            'supervisor' => '1234567896'
+            'departmentname' => 'แผนกรับออร์เดอร์',
+            'departmentID' => '100',
+            'supervisor' => '1004567890'
         ]);  
     }
 }

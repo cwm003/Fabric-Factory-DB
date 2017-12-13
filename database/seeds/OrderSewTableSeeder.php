@@ -11,35 +11,51 @@ class OrderSewTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('ordersews')->insert([   
+        DB::table('ordersews')->insert([  
+            'OrderSewID' => '30001', 
             'OrderID' => '00001',           
-            'OrderSewID' => '00010',
-            'patternID'=> '001',
-            'PartSew' => 'front and back',
-            'EmployeeSewID' => '1234567891',
-            'StartDate' => '2017-01-20',
-            'EndDate' => '2017-01-25',             
-            'Total' => 200          
+            'EmployeeSewID' => '3004567891',
+            'StartDate' => '2017-10-30',
+            'EndDate' => '2017-11-10', 
+            'Total' =>   200,
+            'status' => 0         
         ]);
         DB::table('ordersews')->insert([
-            'OrderID' => '00002',           
-            'OrderSewID' => '00011',
-            'patternID'=> '001',
-            'PartSew' => 'front and back',
-            'EmployeeSewID' => '1234567891',
-            'StartDate' => '2017-01-20',
-            'EndDate' => '2017-01-25',             
-            'Total' => 200
+            'OrderSewID' => '30002',
+            'OrderID' => '00002',             
+            'EmployeeSewID' => '3004567891',
+            'StartDate' => '2017-12-11',
+            'EndDate' => '2017-12-24', 
+            'Total' =>   300,
+            'status' => 0
         ]);
         DB::table('ordersews')->insert([
+            'OrderSewID' => '30003',
             'OrderID' => '00003',           
-            'OrderSewID' => '00012',
-            'patternID'=> '001',
-            'PartSew' => 'front and back',
-            'EmployeeSewID' => '1234567892',
-            'StartDate' => '2017-01-20',
-            'EndDate' => '2017-01-25',             
-            'Total' => 200
+            'EmployeeSewID' => '3004567891',
+            'StartDate' => '2017-10-29',
+            'EndDate' => '2017-10-30', 
+
+            'Total' => 100,
+            'status' => 0
+         ]);
+         DB::table('ordersews')->insert([
+            'OrderSewID' => '30004',
+            'OrderID' => '00004',           
+            'EmployeeSewID' => '3004567891',
+            'StartDate' => '2017-10-29',
+            'EndDate' => '2017-10-30', 
+            'Total' => 100,
+            'status' => 0
+         ]);
+         DB::table('ordersews')->insert([
+            'OrderSewID' => '30005',
+            'OrderID' => '00005',           
+            'EmployeeSewID' => '3004567891',
+            'StartDate' => '2018-02-28',
+            'EndDate' => '2018-03-12', 
+            'Total' => 80,
+            'status' => 0
          ]);
     }
 }

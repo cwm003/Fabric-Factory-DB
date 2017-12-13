@@ -11,25 +11,32 @@ class FactoryTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('factorys')->insert([
+        DB::table('factors')->insert([
             'name_factory' => 'โรงงานผ้าจีน',
             'factory_id' => '1122',
             'tel' => '0256895789',
             'address' => 'Bankok , 10123',
             'account' => '1122334455'
         ]);
-        DB::table('factorys')->insert([
+        DB::table('factors')->insert([
             'name_factory' => 'โรงงานผ้าญี่ปุ่น',
             'factory_id' => '1133',
             'tel' => '0256895789',
             'address' => 'Ayutthaya , 10111',
             'account' => '1122334466'
         ]);
-        DB::table('factorys')->insert([
+        DB::table('factors')->insert([
             'name_factory' => 'โรงงานผ้าเกาหลี',
             'factory_id' => '1144',
             'tel' => '0256895789',
             'address' => 'Rayong , 20456',
+            'account' => '1122334477'
+        ]);
+        DB::table('factors')->insert([
+            'name_factory' => 'โรงงานผ้าอเมริกา',
+            'factory_id' => '1155',
+            'tel' => '0256895789',
+            'address' => 'Huahin , 25456',
             'account' => '1122334477'
         ]);
         
