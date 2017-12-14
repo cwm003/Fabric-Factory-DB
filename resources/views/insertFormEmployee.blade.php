@@ -31,16 +31,16 @@ body, html {
 <h2>Insert Employee</h2></div>
 	<form action='/employees/save/<?php echo $page; ?>' method="post" style="width:500px;font-weight:bold;margin-left:100px">
     <br>
-	<p>
-        <label>Employee ID</label>
-        <?php if($page == 'managerCut') {?>
+    <p>
+        <lable>Employee ID</lable>
+            <?php if($page == 'managerCut') {?>
             <input class="w3-input" type="text" name="employeeID"
             pattern="^200[0-9]{7}" 
             title="Start with department id 200 and seven letter number code" required>
         <?php }else if($page == 'managerOrderCustomer') {?>
             <input class="w3-input" type="text" name="employeeID"
             pattern="^100[0-9]{7}" 
-            title="Start with department id 100 and seven letter number code" required>
+            title="Start with department id 100 and seven letter number code" required> 
         <?php }else if($page == 'managerSew') {?>
             <input class="w3-input" type="text" name="employeeID"
             pattern="^300[0-9]{7}" 
@@ -49,32 +49,37 @@ body, html {
             <input class="w3-input" type="text" name="employeeID"
             pattern="^001[0-9]{7}" 
             title="Start with department id 001 and seven letter number code" required>
+        <?php }else if($page == 'ceo') {?>
+            <input class="w3-input" type="text" name="employeeID"
+            pattern="[0-9]{10}" 
+            title="Ten letter number code" required>
         <?php } ?>
     </p>
+    
     <p>
-        <label>FirstName</label>
+        <lable>FirstName</lable>
         <input class="w3-input" type="text" name="Fname" required>
     </p>
     <p>
-        <label>LastName</label>
+        <lable>LastName</lable>
         <input class="w3-input" type="text" name="Lname" required>
     </p>
 
     <p>
-        <label>Password</label>
+        <lable>Password</lable>
         <input class="w3-input" type="text" name="password" pattern="[0-9a-zA-Z]{8,50}" 
         title="At least eight letter number code" required>
     </p>
 
     <p>
-        <label>Social Security Number</label>
+        <lable>Social Security Number</lable>
         <input class="w3-input" type="text" name="Ssn"
         pattern="[0-9]{13}" 
         title="Thirteen letter number code" required>
     </p>
     <p>
-        <label>Department ID</label>
-        <?php if($page == 'managerCut') {?>
+        <lable>Department ID</lable>
+        <?php if($page == 'managerCut') {?> 
             <input class="w3-input" type="text" name="departmentID"
             pattern="^200" 
             title="Department id = 200" required>
@@ -90,45 +95,52 @@ body, html {
             <input class="w3-input" type="text" name="departmentID"
             pattern="^001" 
             title="Department id = 001" required>
+        <?php }else if($page == 'ceo') {?>
+            <input class="w3-input" type="text" name="employeeID"
+            pattern="[0-9]{10}" 
+            title="Ten letter number code" required>
         <?php } ?>
+        
     </p>
     <p>
-        <label>Age</label>
-        <input class="w3-input" type="text" name="age" required>  
+        <lable>Age</lable>
+        <input class="w3-input" type="text" name="age" required> 
     </p>
     <p>
-        <label>Hire Date</label>
+        <lable>Hire Date</lable>
         <input class="w3-input" type="date" name="hire_date" required>
     </p>
     <p>
-        <label>Tel</label>
-        <input class="w3-input" type="text" name="tel"
+        <lable>Tel</lable>
+        <lable><input class="w3-input" type="text" name="tel"
         pattern="[0-9]{10}" 
         title="Ten letter number phone" required>
     </p>
     <p>
-        <label>Address</label>
-        <input class="w3-input" type="text" name="address" required>
+        <lable>Address</lable>
+        <input class="w3-input" type="text" name="address" required></lable>
     </p>
     <p>
-        <label>Gender</label><br>
-        <input type="radio" name="gender" value="male" checked> Male<br>
+        <lable>Gender</lable><br>
+        <lable><input type="radio" name="gender" value="male" checked> Male<br>
             <input type="radio" name="gender" value="female"> Female<br>
             <input type="radio" name="gender" value="other"> Other
+            
     </p>
     <p><br>
-        <label>Salary</label>
+        <lable>Salary</lable>
         <input class="w3-input" type="text" name="salary" required>
     </p>
     <p>
-        <label>Position</label>
+        <lable>Position</lable>
         <input type="radio" name="position" value="employee" checked> Employee<br>
         
     </p>
-    <tr>
-    <label><input type="submit" name="submit" value="Save"></td>
-</tr>
+    <p>
+    <lable><input type="submit" name="submit" value="Save"></lable>
+</p>
 	</form>
+    </table>
 
 </body>
 </html>
